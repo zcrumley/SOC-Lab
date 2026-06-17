@@ -13,11 +13,13 @@ Verify that the Wazuh server is receiving telemetry from monitored endpoints.
 | Kali Linux VM | Attack simulation machine |
 
 
-## Evidence Collected
 
-- Wazuh dashboard shows connected agents
-- Windows endpoint is reporting to Wazuh
-- Sysmon is installed on the Windows endpoint
+## Wuzah Dashboard Connected
+ ![Wazuh dashboard shows connected agents](../screenshots/Agents.png)
+## Windows Endpoint is reporting to Wazuh
+ ![Windows endpoint is reporting to Wazuh](../screenshots/Win11Dashboard.png)
+ ## Sysmon is installed and running on the Windows endpoint
+ ![Sysmon is installed and running on the Windows endpoint](../screenshots/Sysmon.png)
 
 ## Why This Matters
 

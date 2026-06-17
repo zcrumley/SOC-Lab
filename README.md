@@ -4,7 +4,7 @@
 
 This project documents the design, setup, and use of a home SOC lab built to practice blue-team security monitoring, endpoint telemetry collection, log analysis, and incident investigation.
 
-The lab uses Wazuh as the SIEM/XDR platform, a Windows 11 endpoint with Sysmon for detailed event logging, and a Kali Linux attack machine to generate controlled security events. A personal laptop is also monitored using a Wazuh agent to simulate an additional endpoint in the environment.
+The lab uses Wazuh as the SIEM/XDR platform, a Windows 11 endpoint with Sysmon for detailed event logging, and a Kali Linux attack machine to generate controlled security events. 
 
 ## Objectives
 
@@ -23,7 +23,6 @@ The lab uses Wazuh as the SIEM/XDR platform, a Windows 11 endpoint with Sysmon f
 | Ubuntu Server VM | Hosts Wazuh manager and dashboard |
 | Windows 11 VM | Monitored endpoint/victim machine |
 | Kali Linux VM | Attack simulation machine |
-| Personal Laptop | Additional monitored endpoint using Wazuh agent |
 | Wazuh | SIEM/XDR platform for alerting and log analysis |
 | Sysmon | Windows telemetry and process/event monitoring |
 
@@ -46,7 +45,7 @@ The lab uses Wazuh as the SIEM/XDR platform, a Windows 11 endpoint with Sysmon f
 |---|---|
 | Windows agent connected to Wazuh | Complete |
 | Sysmon installed and forwarding logs | Complete |
-| Failed login monitoring | In Progress |
+| Failed login monitoring | Complete |
 | PowerShell activity detection | Planned |
 | Network scan detection | Planned |
 | Brute-force simulation | Planned |

@@ -1,4 +1,4 @@
-# 03 - PowerShell Activity Monitoring
+#  PowerShell Activity Monitoring
 
 ## Objective
 

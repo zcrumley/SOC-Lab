@@ -88,6 +88,8 @@ Downloads the remote script content as text.
 
 ## Wazuh Alert Evidence
 
+![Detection Explanation](../screenshots/scan-details.png)
+
 Wazuh generated an alert from Sysmon Event ID `11`, which indicates file creation.
 
 The alert showed that PowerShell created a temporary `.ps1` file:

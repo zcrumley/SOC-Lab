@@ -1,4 +1,4 @@
-# SOC  PowerShell Script Drop Detection with Sysmon and Wazuh
+# SOC  PowerShell Script Drop Detection
 
 ## Overview
 

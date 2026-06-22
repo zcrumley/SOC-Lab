@@ -47,7 +47,6 @@ The lab uses Wazuh as the SIEM/XDR platform, a Windows 11 endpoint with Sysmon f
 | Sysmon installed and forwarding logs | Complete |
 | Failed login monitoring | Complete |
 | PowerShell activity detection | Complete |
-| Network scan detection | Planned |
 | Brute-force simulation | Planned |
 | Malware test file detection using EICAR | Planned |
 

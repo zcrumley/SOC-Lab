@@ -41,14 +41,12 @@ The lab uses Wazuh as the SIEM/XDR platform, a Windows 11 endpoint with Sysmon f
 
 ## Detection Scenarios
 
-| Scenario | Status |
-|---|---|
-| Windows agent connected to Wazuh | Complete |
-| Sysmon installed and forwarding logs | Complete |
-| Failed login monitoring | Complete |
-| PowerShell activity detection | Complete |
-| Brute-force simulation | Planned |
-| Malware test file detection using EICAR | Planned |
+- Windows agent connected to Wazuh
+- Sysmon installed and forwarding logs
+- Failed login monitoring
+- PowerShell activity detection
+- Brute-force simulation
+- Malware test file detection using EICAR
 
 ## Screenshots
 
@@ -63,3 +61,5 @@ Screenshots are included throughout the documentation to show:
 ## Lessons Learned
 
 This lab helped reinforce how endpoint telemetry, SIEM alerting, and structured investigation workflows come together in a SOC environment. The project also provided hands-on experience with troubleshooting agents, validating log sources, and documenting alerts in a professional format.
+
+**The biggest takeaway from this lab was that effective SOC monitoring depends on proper configuration of agents, rules, alerts, and triggers. A SIEM is only useful when it is tuned to collect meaningful security events accurately while filtering out routine or non-critical activity.**

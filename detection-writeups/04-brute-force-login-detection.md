@@ -27,8 +27,8 @@ The objective of this lab was to:
 | Attacker/Test Machine | Kali Linux VM        |
 | Protocol Tested       | RDP                  |
 | Target User           | `socla`              |
-| Target IP             | `192.168.65.132`     |
-| Source IP             | `192.168.65.133`     |
+| Target IP             | `192.168.x.x`        |
+| Source IP             | `192.168.x.x`        |
 | Dashboard             | Wazuh Threat Hunting |
 
 ## Tools Used
@@ -47,7 +47,7 @@ The test was performed from Kali Linux using `xfreerdp` to attempt an RDP login 
 The login attempt used the correct username but an intentionally incorrect password.
 
 ```bash
-xfreerdp /v:192.168.65.132 /u:socla /p:Password123! /cert:ignore
+xfreerdp /v:192.168.x.x /u:socla /p:Password123! /cert:ignore
 ```
 
 ### Command Breakdown
@@ -59,7 +59,7 @@ xfreerdp
 Launches the FreeRDP client from Kali Linux.
 
 ```bash
-/v:192.168.65.132
+/v:192.168.x.x
 ```
 
 Specifies the target Windows 11 machine by IP address.
@@ -125,9 +125,9 @@ Important fields observed included:
 | Field                  | Value            |
 | ---------------------- | ---------------- |
 | Agent Name             | `Windows11PC`    |
-| Agent IP               | `192.168.65.132` |
+| Agent IP               | `192.168.x.x`    |
 | Target Username        | `socla`          |
-| Source IP Address      | `192.168.65.133` |
+| Source IP Address      | `192.168.x.x`    |
 | Workstation Name       | `kali`           |
 | Authentication Package | `NTLM`           |
 | Logon Process          | `NtLmSsp`        |
@@ -150,7 +150,7 @@ Important fields observed included:
 | Field           | Value                            |
 | --------------- | -------------------------------- |
 | Agent Name      | `Windows11PC`                    |
-| Agent IP        | `192.168.65.132`                 |
+| Agent IP        | `192.168.x.x`                    |
 | Target Username | `socla`                          |
 | Target Domain   | `kali`                           |
 | Event ID        | `4740`                           |
@@ -167,10 +167,10 @@ The account lockout event confirmed that the failed authentication attempts trig
 | Indicator             | Value                                 |
 | --------------------- | ------------------------------------- |
 | Target Host           | `Windows11PC`                         |
-| Target IP             | `192.168.65.132`                      |
+| Target IP             | `192.168.x.x`                         |
 | Target Username       | `socla`                               |
 | Source Host           | `kali`                                |
-| Source IP             | `192.168.65.133`                      |
+| Source IP             | `192.168.x.x`                         |
 | Protocol              | RDP                                   |
 | Authentication Result | Failed login                          |
 | Account Impact        | Account lockout                       |
